@@ -2,7 +2,7 @@ TARGET = hungarian
 
 CXX = g++
 #compiling flags here
-CXXFLAGS = -O3 -std=c++20 -I.
+CXXFLAGS = -O3 -std=c++17 -I.
 
 LINKER = $(CXX) -o
 #linking flags here
