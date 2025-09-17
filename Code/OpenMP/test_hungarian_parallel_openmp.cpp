@@ -25,7 +25,7 @@ vector<int> test_cases = {2500, 5000, 7500, 10000, 12500};
 
 void init_potentials_parallel(vector<vector<int>> &cost, int n, vector<double>& dual_row, vector<double>& dual_col){
     // Init dual row
-	#pragma parallel for num_threads(NUM_THREADS)
+	#pragma omp parallel for num_threads(NUM_THREADS)
     for (int i = 0; i < n; i++){
         double temp = inf;
 		// Find minimum value of row i
@@ -36,7 +36,7 @@ void init_potentials_parallel(vector<vector<int>> &cost, int n, vector<double>& 
     }
 
 	// Init dual col
-    #pragma parallel for num_threads(NUM_THREADS)
+    #pragma omp parallel for num_threads(NUM_THREADS)
     for (int j = 0; j < n; j++){
         double temp = inf;
 		// Find minimum value of col j
@@ -51,7 +51,7 @@ int optimality_check_parallel(int n, vector<bool>& cov_row, vector<int> ass_row)
     int match_count = 0;
 	
 	// Calculate the number of assigned resources using a reduction to combine the partial results
-    #pragma parallel for reduction(+: match_count) num_threads(NUM_THREADS)
+    #pragma omp parallel for reduction(+: match_count) num_threads(NUM_THREADS)
     for (int i=0; i<n; i++){
         if (ass_row[i] != -1){
             cov_row[i] = 1;
