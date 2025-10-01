@@ -1,1 +1,0 @@
-# Directory where the result-files are stored
