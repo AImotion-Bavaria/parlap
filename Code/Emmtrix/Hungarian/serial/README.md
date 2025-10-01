@@ -28,7 +28,7 @@ gcc ./hungarian.c -O3 -o hun
 ```
 
 ### 5. Run Code
-Run the compiled code. The results will be stored in the generated file `hun_emmtrix_50_2.txt`.
+Run the compiled code. The results will be stored in the generated file `hun_emmtrix_50_ser.txt`.
 ```bash
 ./hungarian
 ```
