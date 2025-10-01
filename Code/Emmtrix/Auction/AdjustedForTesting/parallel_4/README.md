@@ -1,4 +1,4 @@
-# ePS Hungarian Algorithm Implementation with 4 cores adjusted for testing
+# ePS Auction Algorithm Implementation with 4 cores adjusted for testing
 
 ## Configuration
 
