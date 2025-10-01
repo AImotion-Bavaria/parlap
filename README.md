@@ -11,3 +11,7 @@
 
 - **`ePS/`**  
   Contains the **parallel implementations** of the Hungarian and Auction algorithms generated with **ePS**.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
