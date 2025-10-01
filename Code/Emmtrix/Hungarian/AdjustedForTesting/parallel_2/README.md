@@ -1,4 +1,4 @@
-# ePS Hungarian Algorithm Implementation adjusted for testing
+# ePS Hungarian Algorithm Implementation with 2 cores adjusted for testing
 
 ## Configuration
 
@@ -31,5 +31,5 @@ make
 ### 5. Run Code
 Run the compiled code. The results will be stored in the generated file `hun_emmtrix_50_2.txt`.
 ```bash
-./hungarian.c
+./hungarian
 ```
