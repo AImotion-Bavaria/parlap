@@ -29,7 +29,7 @@ make
 ```
 
 ### 5. Run Code
-Run the compiled code. The results will be stored in the generated file `_emx_s_hungarian.c`.
+Run the compiled code. The results will be stored in the generated file `hun_emmtrix_50_2.txt`.
 ```bash
 ./hungarian.c
 ```
