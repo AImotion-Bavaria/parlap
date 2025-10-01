@@ -29,7 +29,7 @@ make
 ```
 
 ### 5. Run Code
-Run the compiled code. The results will be stored in the generated file `auc_emmtrix_50_2.txt`.
+Run the compiled code. The results will be stored in the generated file `auc_emmtrix_2.txt`.
 ```bash
 ./auction
 ```
