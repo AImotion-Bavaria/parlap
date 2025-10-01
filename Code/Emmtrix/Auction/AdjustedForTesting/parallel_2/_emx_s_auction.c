@@ -388,12 +388,12 @@ int main_p0() {
 
 	// Open a file in write mode
 	f = fopen("auc_emmtrix_2.txt", "a");
-	fprintf(f, "Auction Parallel Emmtrix(4 Cores): \n");
+	fprintf(f, "Auction Parallel Emmtrix(2 Cores): \n");
 	fprintf(f, "Size\t\t\t\tCost\t\t\t\tTotal Time in s\t\t\tTotal CPU time in ms\n");
 	fclose(f);
 
 	f_mean = fopen("auc_emmtrix_2_mean.txt", "a");
-	fprintf(f_mean, "Auction Parallel Emmtrix (4 Cores, %d runs): \n", R);
+	fprintf(f_mean, "Auction Parallel Emmtrix (2 Cores, %d runs): \n", R);
 	fprintf(f_mean, "Size\t\t\t\tMean Time in s\t\t\tMean CPU time in ms\t\t\tMedian Time in s\t\t\tMedian CPU Time in ms\n");
 	fclose(f_mean);
 
