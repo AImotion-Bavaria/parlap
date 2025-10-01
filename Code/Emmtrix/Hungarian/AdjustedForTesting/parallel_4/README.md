@@ -3,7 +3,7 @@
 ## Configuration
 
 ### 1. Problem Size
-In `_emx_s_hungarian.c`, the problem size has to be set. It is also necessary to manually define the block size N_50, which is half of N. (Only integer block sizes are supported!)
+In `_emx_s_hungarian.c`, the problem size has to be set. It is also necessary to manually define the block size N_25, N_50, N_75. (Only integer block sizes are supported!)
 Example:
 
 ```c
