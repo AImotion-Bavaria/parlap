@@ -31,7 +31,7 @@ make
 ```
 
 ### 5. Run Code
-Run the compiled code. The results will be stored in the generated file `hun_emmtrix_50_4.txt`.
+Run the compiled code. The results will be stored in the generated file `hun_emmtrix_4.txt`.
 ```bash
 ./hungarian
 ```
