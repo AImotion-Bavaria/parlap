@@ -3622,8 +3622,8 @@ int main_p0() {
 	FILE *f_mean;
 
 	// Open a file in write mode
-	f = fopen("hun_emmtrix_50_8.txt", "a");
-	f_mean = fopen("hun_emmtrix_50_8_mean.txt", "a");
+	f = fopen("hun_emmtrix_8.txt", "a");
+	f_mean = fopen("hun_emmtrix_8_mean.txt", "a");
 
 	fprintf(f, "Hungarian Parallel Emmtrix (8 Threads): \n");
 	fprintf(f, "Size\t\t\t\tCost\t\t\t\tTotal Time in s\t\t\tTotal CPU time in ms\n");
@@ -3705,7 +3705,7 @@ int main_p0() {
 				sum_time += time;
 
 				// Open a file in append mode
-				f = fopen("hun_emmtrix_50_8.txt", "a");
+				f = fopen("hun_emmtrix_8.txt", "a");
 				fprintf(f, "%d\t\t\t\t%d\t\t\t\t%f\t\t\t\t%f\n", N, result_p0, timing / 1000.0, time);
 				fclose(f);
 				
@@ -3736,7 +3736,7 @@ int main_p0() {
 			double median_time = findMedian_p1(times, num_test_runs_p0);
 
 			// Open a file in append mode
-			f_mean = fopen("hun_emmtrix_50_8_mean.txt", "a");
+			f_mean = fopen("hun_emmtrix_8_mean.txt", "a");
 			fprintf(f_mean, "%d\t\t\t\t%f\t\t\t\t%f\t\t\t\t%f\t\t\t\t%f\n", N, mean_timing / 1000.0, mean_time, median_timing / 1000.0, median_time);
 			fclose(f_mean);	
 			
